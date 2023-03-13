@@ -1,8 +1,9 @@
 .container {
+    width: 1800;
     height: 100vh;
     display: flex;
-    background-color: #e5ddcb;
     justify-content: center;
+
 }
 
 .header {
@@ -56,7 +57,9 @@
 }
 
 .input-area input:focus {
+    display: flex;
     outline-color: #eb7b59;
+    flex-direction: column;
 }
 
 .input-area button {
@@ -67,10 +70,12 @@
     padding: 10px;
     text-align: center;
     font-weight: bold;
+    font-size: 20px;
     background: #A7C5BD;
     color: #524656;
     border-radius: 20px;
     border: 0px;
+
 }
 
 .input-area button:hover {
@@ -79,9 +84,81 @@
     cursor: pointer;
 }
 
-.socials{
-display: flex;
-padding: 10px;
+.socials {
+    display: flex;
+    padding: 10px;
 
 }
 
+.container-video {
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    top: 295px;
+    display: flex;
+    background: #A7C5BD;
+    border-radius: 20px;
+
+}
+
+.container img {
+    position: absolute;
+    display: flex;
+    width: 590px;
+    height: 373px;
+    left: 20px;
+    top: 70px;
+    border-radius: 20px;
+
+}
+.title{
+    overflow: hidden;
+}
+.title span {
+    position: absolute;
+    display: flex;
+    width: 560px;
+    height: 288px;
+    left: 640px;
+    top: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.canal span {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    width: 630px;
+    height: 288px;
+    left: 640px;
+    top: 140px;
+}
+.data span {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    width: 630px;
+    height: 288px;
+    left: 640px;
+    top: 180px;
+}
+
+.button-download button{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    left: 640px;
+    top: 260px;
+    font-weight: bold;
+    font-size: 20px;
+    background: #CF4647;
+    color: #A7C5BD;
+    border: 0px;
+}
+.button-download button:hover {
+    border: 10px;
+    transform: scale(1.07);
+    cursor: pointer;
+}
