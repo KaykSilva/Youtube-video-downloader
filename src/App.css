@@ -1,5 +1,5 @@
 .container {
-    width: 1800;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -111,9 +111,11 @@
     border-radius: 20px;
 
 }
-.title{
+
+.title {
     overflow: hidden;
 }
+
 .title span {
     position: absolute;
     display: flex;
@@ -121,10 +123,15 @@
     height: 288px;
     left: 640px;
     top: 100px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #524656;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
 .canal span {
     position: absolute;
     flex-direction: column;
@@ -133,7 +140,13 @@
     height: 288px;
     left: 640px;
     top: 140px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #524656;
+    white-space: nowrap;
 }
+
 .data span {
     position: absolute;
     flex-direction: column;
@@ -142,9 +155,13 @@
     height: 288px;
     left: 640px;
     top: 180px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #524656;
 }
 
-.button-download button{
+.button-download button {
     position: absolute;
     width: 200px;
     height: 50px;
@@ -156,9 +173,84 @@
     background: #CF4647;
     color: #A7C5BD;
     border: 0px;
+
 }
+
 .button-download button:hover {
     border: 10px;
     transform: scale(1.07);
     cursor: pointer;
+}
+
+@media (max-width: 1134px) {
+
+    .container {
+        width: 100%;
+
+    
+    }
+
+    .header {
+        width: 80%;
+      
+    }
+    .titulo {
+        font-size: 30px;
+    }
+
+    .input-area input {
+        width: 60%;
+
+    }
+
+    .container-video {
+       width: 76%;
+        height: 260px;
+    }
+
+    .container img {
+      
+        width: 150px;
+        height: 90px;
+        left: 20px;
+        top: 20px;
+        border-radius: 10px;
+    
+    }
+
+    .title span {
+       
+      
+        width: 180px;
+        height: 288px;
+        left: 175px;
+        top: 20px;
+        font-size: 16px;
+    }
+    
+    .canal span {
+        width: 180px;
+        height: 288px;
+        left: 175px;
+        top: 40px;
+        font-size: 16px;
+    }
+    
+    .data span {
+        width: 180px;
+        height: 288px;
+        left: 176px;
+        top: 60px;
+        font-size: 16px;
+    }
+    
+    .button-download button {
+     
+        width: 100px;
+        height: 50px;
+        left: 50px;
+        top: 120px;
+        font-size: 18px;
+  
+    }
 }
